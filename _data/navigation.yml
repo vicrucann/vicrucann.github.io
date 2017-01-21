@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Tutorials"
-    url: /tutorials/
+    url: /tutorials-archive/
   - title: "Posts"
-    url: /posts/
+    url: /posts-archive/
   - title: "About"
     url: /about/
   # - title: "Sitemap"
