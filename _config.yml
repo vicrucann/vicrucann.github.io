@@ -7,16 +7,16 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+title                    : "Cute scene graphs and beyond"
+title_separator          : "|"
+name                     : "Victoria Rudakova"
+description              : "Professional blog and tutorials on using different tools for vision and graphics applications"
 url                      : "https://vicrucann.github.io"
 baseurl                  : "/minimal-mistakes"
 repository               : "vicrucann/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 180
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -26,8 +26,8 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            : 5 # 5 (default)
+    colorscheme          : "dark" # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "vicrucann"
 facebook:
   username               :
   app_id                 :
@@ -77,11 +77,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Victoria Rudakova"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "I am a computer graphics researcher at Yale Univerisity. I enjoy language learning, visiting new places and occasionally do rock climbing."
+  location         : "New Haven, CT"
+  email            : "vicrucann@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -89,18 +89,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
-  google_plus      :
+  github           : "vicrucann"
+  google_plus      : "VictoriaRudakova"
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "vicrucann"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  stackoverflow    : "4118460/vicrucann" # "123456/username"
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "vicrucann"
   vine             :
   weibo            :
   xing             :
