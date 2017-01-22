@@ -9,14 +9,19 @@ excerpt: 'Professional blog and tutorials on using different tools for vision an
 feature_row:
   - image_path: /assets/images/teaser-tutorials.png
     title: "Coding Tutorials"
-    excerpt: "Tool installation, libraries usage hacks, computer graphics, user interfaces and many more."
+    excerpt: "Tool installation, libraries usage hacks, computer graphics and more."
     url: "/tutorials/"
     btn_label: "View List"
   - image_path: /assets/images/teaser-projects.png
     title: "Projects"
-    excerpt: "Description of past and current projects."
+    excerpt: "Review of past and current projects that I worked / work with."
     url: "/portfolio/"
     btn_label: "View List"
+- image_path: /assets/images/teaser-third.png
+  title: "Title"
+  excerpt: "Another interesting column will be placed here."
+  url: "/page-X/"
+  btn_label: "Learn More"
 intro:
   - excerpt: 'Get notified when I add new post &nbsp; [<i class="fa fa-twitter"></i> @vicrucann](https://twitter.com/vicrucann){: .btn .btn--twitter}'
 ---
