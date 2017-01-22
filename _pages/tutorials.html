@@ -2,9 +2,18 @@
 layout: archive
 permalink: /tutorials/
 title: "Tutorials"
-author_profile: true
+author_profile: false
 ---
 
-{% for post in site.tutorials %}
-  {% include archive-single.html %}
-{% endfor %} 
+{% include base_path %}
+{% include group-by-array collection=site.posts field="categories" %}
+
+{% for category in group_names %}
+ {% if category == "tutorials" %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+  {% endif %}
+{% endfor %}
