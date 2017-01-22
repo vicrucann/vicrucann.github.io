@@ -111,6 +111,9 @@ author:
 include:
   - .htaccess
   - _pages
+  - _portfolio
+  - _posts
+  - _tutorials
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
