@@ -1,9 +1,12 @@
 ---
-layout: post
 title: "GLSL shader for fog imitation"
-categories: tutorials
+categories: 
+    - Tutorials
 excerpt: By using OpenSceneGraph and GLSL shader, this code snippet demonstrates a simplest way to add a fog effect to your geometries by diluting geometry's color into the background color. 
-tags: [OpenSceneGraph, OpenGL, GLSL]
+tags: 
+    - OpenSceneGraph 
+    - OpenGL 
+    - GLSL
 ---
 
 # Context
