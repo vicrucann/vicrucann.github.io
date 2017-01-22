@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/vr-home-page-feature.jpg
+  overlay_image: /assets/images/vr-home-page-feature.JPG
   caption:
 excerpt: 'Professional blog and tutorials on using different tools for vision and graphics applications.'
 feature_row:
