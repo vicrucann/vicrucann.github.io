@@ -7,6 +7,7 @@ tags:
     - OpenSceneGraph 
     - OpenGL 
     - GLSL
+mathjax: true
 ---
 
 # Context
