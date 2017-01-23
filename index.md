@@ -17,6 +17,11 @@ feature_row:
     excerpt: "Review of past and current projects that I worked / work with."
     url: "/portfolio/"
     btn_label: "View List"
+  - image_path: /assets/images/teaser-resources.JPG
+    title: "Resources"
+    excerpt: "Fun compilation of my favorite tech books, media and work balance resources."
+    url: "/resources/"
+    btn_label: "View List"
 intro:
   - excerpt: 'Get notified when I add new post &nbsp; [<i class="fa fa-twitter"></i> @vicrucann](https://twitter.com/vicrucann){: .btn .btn--twitter}'
 ---
