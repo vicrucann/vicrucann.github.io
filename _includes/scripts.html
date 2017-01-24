@@ -1,4 +1,10 @@
-<script src="{{ base_path }}/assets/js/main.min.js"></script>
+<script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
+
+{% if page.mathjax %}
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+{% endif %}
