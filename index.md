@@ -13,7 +13,7 @@ feature_row:
     url: "/tutorials/"
     btn_label: "View List"
 feature_row2:
-  - image_path: /assets/images/teaser-posts.png
+  - image_path: /assets/images/teaser-posts.jpg
     title: "Blog Posts"
     excerpt: "Time management, lifestyle, travel and other posts."
     url: "/posts/"
