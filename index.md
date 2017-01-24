@@ -12,6 +12,12 @@ feature_row:
     excerpt: "Tool installation, libraries usage hacks, computer graphics and more."
     url: "/tutorials/"
     btn_label: "View List"
+feature_row2:
+  - image_path: /assets/images/teaser-posts.png
+    title: "Blog Posts"
+    excerpt: "Time management, lifestyle, travel and other posts."
+    url: "/posts/"
+    btn_label: "View List"
   - image_path: /assets/images/teaser-projects.png
     title: "Projects"
     excerpt: "Review of past and current projects that I worked / work with."
@@ -19,7 +25,7 @@ feature_row:
     btn_label: "View List"
   - image_path: /assets/images/teaser-resources.JPG
     title: "Resources"
-    excerpt: "Fun compilation of my favorite tech books, media and work balance resources."
+    excerpt: "Fun compilation of my favorite tech books, media and lifestyle resources."
     url: "/resources/"
     btn_label: "View List"
 intro:
