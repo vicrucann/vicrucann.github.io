@@ -15,17 +15,17 @@ feature_row:
 feature_row2:
   - image_path: /assets/images/teaser-posts.jpg
     title: "Blog Posts"
-    excerpt: "Time management, lifestyle, travel and other posts."
+    excerpt: "Time management, lifestyle and travel."
     url: "/posts/"
     btn_label: "View List"
   - image_path: /assets/images/teaser-projects.png
     title: "Projects"
-    excerpt: "Review of past and current projects that I worked / work with."
+    excerpt: "Overview of past and current projects."
     url: "/portfolio/"
     btn_label: "View List"
   - image_path: /assets/images/teaser-resources.JPG
     title: "Resources"
-    excerpt: "Fun compilation of my favorite tech books, media and lifestyle resources."
+    excerpt: "Compilation of favorite books and media resources."
     url: "/resources/"
     btn_label: "View List"
 intro:
