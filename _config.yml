@@ -7,35 +7,35 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Victoria Rudakova"
-title_separator          : "|"
-name                     : "Victoria Rudakova"
-description              : "Professional blog and tutorials on using different tools for vision and graphics applications"
-url                      : "https://vicrucann.github.io"
-baseurl                  : "/minimal-mistakes"
-repository               : "vicrucann/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+title                    : "Site Title"
+title_separator          : "-"
+name                     : "Your Name"
+description              : "An amazing website."
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 180
+words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : "vicrucann-github" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : 5 # 5 (default)
-    colorscheme          : "dark" # "light" (default), "dark"
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "master"
+  branch                 : # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
-  path                   : "docs/_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
+  path                   : "_data/comments/{options.slug}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
     email                : "md5"
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "vicrucann"
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -77,11 +77,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Victoria Rudakova"
-  avatar           : "/assets/images/vr-author.jpg"
-  bio              : "I am a computer graphics researcher at Yale Univerisity. I enjoy language learning, visiting new places and occasionally do rock climbing."
-  location         : "New Haven, CT"
-  email            : "vicrucann@gmail.com"
+  name             : "Your Name"
+  avatar           : "bio-photo.jpg"
+  bio              : "I am an amazing person."
+  location         : "Somewhere"
+  email            :
   uri              :
   bitbucket        :
   codepen          :
@@ -89,31 +89,28 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "vicrucann"
-  google_plus      : "VictoriaRudakova"
+  github           :
+  google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "vicrucann"
+  linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : "4118460/vicrucann" # "123456/username"
+  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : "vicrucann"
+  twitter          :
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          :
 
 
 # Reading Files
 include:
   - .htaccess
   - _pages
-  - _portfolio
-  - _posts
-  - _tutorials
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -138,8 +135,6 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -166,7 +161,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-mathjax: true
 
 # Sass/SCSS
 sass:
@@ -233,33 +227,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-
-# Collections
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
