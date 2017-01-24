@@ -3,10 +3,12 @@ title: "Resources"
 permalink: /resources/
 ---
 
+# Resources
+
 This page contains a compilation of my favorite tech and lifestyle resources.
 
-# Books
+## Books
 
-# Media
+## Media
 
 * [Land any job you want](http://landanyjobyouwant.com/) - an unconvnetional career advices. In my opinion, one of the best career advice on the Internet. 
