@@ -5,6 +5,14 @@ permalink: /posts/
 author_profile: false
 ---
 
-{% for post in site.posts %}
-  {% include archive-single.html %}
+{% include base_path %}
+{% include group-by-array collection=site.posts field="categories" %}
+
+{% for category in group_names %}
+ {% if category == "Posts" %}
+  {% assign posts = group_items[forloop.index0] %}
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+  {% endif %}
 {% endfor %}

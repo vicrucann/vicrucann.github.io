@@ -1,10 +1,11 @@
 # main links
 main:
-  - title: "Posts"
+  - title: "All Entries"
     url: /year-archive/
-  - title: "Collections"
-    url: /collection-archive/
   - title: "About"
     url: /about/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Contact"
+    url: /contact/
+  - title: "Sitemap"
+    url: /sitemap/
+
