@@ -1,9 +1,9 @@
 ---
 title: "Cherish"
 excerpt: "Sketch- and image-based system for 3D representation and documentation of cultural heritage sites"
-#header:
-#  image: /assets/images/foo-bar-identity.jpg
-#  teaser: /assets/images/foo-bar-identity-th.jpg
+header:
+  image: /assets/images/teaser-graphics.png
+  teaser: /assets/images/teaser-graphics.png
 sidebar:
   - title: "Role"
     image: /assets/images/yale-logo.gif
