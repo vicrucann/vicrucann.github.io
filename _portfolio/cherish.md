@@ -12,15 +12,15 @@ sidebar:
   - title: "Responsibilities"
     text: "Design, development and maintanance of the system."
 gallery:
-  #- url: /assets/images/cherish/cherish-scene.bmp
-  #  image_path: assets/images/cherish/cherish-scene.bmp
-  #  alt: "Cherish screenshot 1"
-  #- url: /assets/images/cherish/cherish-scene2.gif
-  #  image_path: assets/images/cherish/cherish-scene2.gif
-  #  alt: "Cherish screenshot 2"
-  #- url: /assets/images/cherish/cherish-scene3.bmp
-  #  image_path: assets/images/cherish/cherish-scene3.bmp
-  #  alt: "Cherish screenshot 3"
+  - url: /assets/images/cherish/cherish-scene.bmp
+    image_path: assets/images/cherish/cherish-scene.bmp
+    alt: "Cherish screenshot 1"
+  - url: /assets/images/cherish/cherish-scene2.gif
+    image_path: assets/images/cherish/cherish-scene2.gif
+    alt: "Cherish screenshot 2"
+  - url: /assets/images/cherish/cherish-scene3.bmp
+    image_path: assets/images/cherish/cherish-scene3.bmp
+    alt: "Cherish screenshot 3"
 ---
 
 `Cherish` is a tool that aids archaeologists and designers to represent historical, urban and archaeological structures and sites in 3D by means of image manipulation and sketching. `Cherish` creation was inspired by a [Yale's Dura Europos dataset](http://media.artgallery.yale.edu/duraeuropos/) - a large image dataset of an ancient site which is located in modern Syria. One of the main characteristic of the data set is its spacial sparsity and featureless natures of photographs which does not allow us to utilize the modern computer vision in order to obtain 3D representation of the site.
@@ -29,6 +29,6 @@ The main idea behind `Cherish` is to use the knowledge and expertise of speciali
 
 **Note**: `Cherish` is currently under development.
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+{% include gallery caption="`Cherish` screenshots." %}
 
-Description continuation.
+`Cherish` is an open source project. For its code, check the [corresponding github repository](https://github.com/vicrucann/cherish).
