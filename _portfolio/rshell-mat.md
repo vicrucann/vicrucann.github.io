@@ -15,7 +15,7 @@ sidebar:
 #  - url: /assets/images/cryo3d/cached.png
 #    image_path: assets/images/cryo3d/cached.png
 #    alt: "3D reconstructed protein viewable from Chimera."
-date: 2015
+date: 2015-08-01
 ---
 
 `rshell-mat` is a bash script based utility that helps to ease heavy data processing in Matlab. Its main idea is to send the split data to several remote servers and run the most heavy computations simultaneously using those remotes. When the processing is done, the split result files are copied back to the local machine, merged by using the user-provided function; so the data can be used further in Matlab.
