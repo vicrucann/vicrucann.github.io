@@ -15,7 +15,7 @@ gallery:
   - url: /assets/images/imagine/corrca.png
     image_path: assets/images/imagine/corrca.png
     alt: "Chromatically aberrated images: before(left) and after(right) of the correction."
- date: 2013-12-01
+date: 2013-12-01
 ---
 
 The tool allows correction of  lateral chromatic aberration correction in images through color planes warping. The implemented algorithm allows alignment of average 0.05 pixel of color channels. 
