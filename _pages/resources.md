@@ -4,19 +4,22 @@ title: "Resources"
 permalink: /resources/
 ---
 
-In this list I try to include some not-so-well known resources that I found useful and fun. This list is occasionally updated.
+In this list I try to include some of my favorite resources. This list is occasionally updated.
 
 # Books
 
 * [Soft Skills: The software developer's life manual](http://a.co/hGdAB08) by John Sonmez - great resource on many aspects of software developers lifestyle and life management. From self-marketing to health and retirement - it covers varying topics. Many of them came quite useful for me.
 
-# Media
+# Blogs
 
+* [foonathan::blog()](http://foonathan.net) - some interesting articles from a C++ library developer.
+* [KDAB's blog](https://www.kdab.com/category/blogs/) - blog by developers of Qt on C++, Qt, OpenGL and related tech news.
 * [Land any job you want](http://landanyjobyouwant.com/) - an unconvnetional career advice blog. In my opinion, one of the best career advice on the Internet. The blog often highlights different techniques on how to get way before any other candidate when applying for a job position. The author provides lots of real examples and step-by-step instructions on how to land your perfect job.
+* [Communication for nerds](http://www.communicationfornerds.com/) is a great blog on improving your social skills in a work environment. Real life advice and scientific backups make it a real gem.
 
 # Courses
 
-* [Charismatic conversation](http://www.communicationfornerds.com/) is a great course that sometimes is run by Katrina. In the course she provides some of the greatest advices on how to hold yourself within many social situations. The main goal of the course is to learn how to build a solid rock network to help you get advanced in your career.
+# Talks
 
 # Entertainment
 
