@@ -3,7 +3,7 @@ title: "Cryo3d"
 excerpt: "Software for fast 3D protein reconstruction based on cryogenic electron-microscopy particle images."
 header:
   image: /assets/images/teaser-ipag.jpg
-  teaser: /assets/images/teaser-ipag.jpg
+  teaser: /assets/images/cryo3d/chimera-3dmasked.png
 sidebar:
   - title: "Role"
     image: /assets/images/yale-med-logo.png
