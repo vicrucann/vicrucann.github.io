@@ -13,7 +13,7 @@ sidebar:
     text: "Design and organization of the system framework. Development and addition of new features."
 gallery:
   - url: /assets/images/cryo3d/chimera-3dmasked.png
-    image_path: assets/images/cryo3d/chimera-3dmasked.bmp
+    image_path: assets/images/cryo3d/chimera-3dmasked.png
     alt: "3D reconstructed protein viewable from Chimera."
 ---
 
@@ -23,4 +23,4 @@ gallery:
 
 {% include gallery caption="A screenshot of the result masked reconstruction viewable from Chimera software." %}
 
-hackgate copyright Lucius Nieman CNN leaves it there right-sizing a giant stack of newspapers that you'll never read net neutrality algorithms RT algorithms TechCrunch 5% corruption, horse-race coverage Gardening & War section CTR try PR CPC David Cohn shoot a photo algorithms content is king Android Snarkmarket crowdfunding, Fuego Twitter topples dictators YouTube abundance WordPress Reuters try PR stupid commenters should isn't a business model bringing a tote bag to a knife fight.
+`Cryo3d` codes can be found in the [corresponding github repository](https://github.com/vicrucann/cryo3d).
