@@ -1,6 +1,6 @@
 ---
 title: "Cherish"
-excerpt: "Sketch- and image-based system for 3D representation and documentation of cultural heritage sites"
+excerpt: "Sketch- and image-based system for 3D representation and documentation of cultural heritage sites."
 header:
   image: /assets/images/teaser-graphics.png
   teaser: /assets/images/cherish/cherish-scene.bmp
