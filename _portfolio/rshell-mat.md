@@ -1,6 +1,6 @@
 ---
 title: "rshell-mat"
-excerpt: "Shell script based imitation of Matlab big data distributor."
+excerpt: "Shell scripts represented by a Matlab interface class in order to imitate Matlab distributor."
 header:
   image: /assets/images/teaser-ipag.jpg
   teaser: /assets/images/cryo3d/cached.png
