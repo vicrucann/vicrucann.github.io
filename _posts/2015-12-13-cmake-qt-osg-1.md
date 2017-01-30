@@ -1,6 +1,5 @@
 ---
 title: "Step-by-step on how to set up your CMake, Qt and OSG in draw-on-demand mode (Part 1)
-categories: tutorials"
 categories: 
     - Tutorials
 excerpt: A minimal CMake file that allows to set up a development environment to use with both OSG and Qt libraries. A running example of a minimal scene graph within the Qt application by performing all the redraws on demand. 
@@ -22,9 +21,9 @@ This way of combining the Qt with OSG is most relevant for CAD-like applications
 
 This tutorial is planned to include a very detailed explanation of the every step I make. While it seems to be working fine for my current project, do not hesitate to indicate any errors that you think are present (please, leave a comment below, or contact me by email). After all, I am still learning both OSG and Qt and consider myself a beginner.
 
-## Step-by-step set up
+# Step-by-step set up
 
-### `CMakeLists.txt` file
+## `CMakeLists.txt` file
 
 Before I start any actual coding, I always work on the CMake file. This helps me to define the environment requirements and an initial structure of my project. For this tutorial, the CMake file will be rather simple. 
 
@@ -82,7 +81,7 @@ target_link_libraries(${PROJECT_NAME}
 
 And that is all we need for the CMake file. Surely, a professional CMake file would include many other components such as version checking, cross-platform compiler set up, etc. But we stop here since we are only interested in a basic working example. 
 
-### Hello World
+## Hello World
 
 Now we are ready to do some coding. At first we create the file `vim qtosg.cpp` (or use any other editor of your choice), and write down a basic `Hello World` Qt program:
 
@@ -105,7 +104,7 @@ int main(int argc, char** argv){
 
 This piece of code will produce an empty window:
 
-![Empty Window]({{ site.url }}/assets/images/osg-cmake-minimal/empty-window.png)
+![Empty Window]({{ site.url }}/images/osg-cmake-minimal/empty-window.png)
 {: .pull-center}
 
 Our next task is to redefine a `QWidget` so that it uses OSG graphics context and scene elements.
@@ -210,7 +209,7 @@ virtual void paintGL() {
 
 If we try to compile and run our program at this stage, the scene will indeed be rendered and we will see our cylinder. However, since we did not set up viewport and projection parmeters, it will appear very small in the left lower corner:
 
-![Frame Window]({{ site.url }}/assets/images/osg-cmake-minimal/frame-window.png)
+![Frame Window]({{ site.url }}/images/osg-cmake-minimal/frame-window.png)
 {: .pull-center}
 
 Re-implementation of the `resizeGL()` method where we can set up the necessary parameters will solve this problem. For that we will use a helper method that is contained in **graphics window** called `getEventQueue()` to manage GUI events (to read more about graphics window and graphics context, refer to the book *OpenSceneGraph: beginner's guide*, chapter 9). 
@@ -232,7 +231,7 @@ virtual void resizeGL( int width, int height ) {
 
 Now if we render our scene, we will see that the viewport is set up and the cylinder is located at the center of the screen:
 
-![Frame Window]({{ site.url }}/assets/images/osg-cmake-minimal/resize-window.png)
+![Frame Window]({{ site.url }}/images/osg-cmake-minimal/resize-window.png)
 {: .pull-center}
 
 We re-implement `initializeGL()` to define the OpenGL state of the scene:
@@ -250,14 +249,14 @@ virtual void initializeGL(){
 
 When we run our program this time, the cylinder renders correctly, without any artifacts:
 
-![Frame Window]({{ site.url }}/assets/images/osg-cmake-minimal/init-window.png)
+![Frame Window]({{ site.url }}/images/osg-cmake-minimal/init-window.png)
 {: .pull-center}
 
-## Conclusion
+# Conclusion
 
 In this tutorial we demonstrated to how set up your CMake file and then how to prepare your base Qt + OSG class so that to render OSG scenes within Qt widget. The provided material only allows to render a scene without any user interaction, e.g., it is not possible to change the camera view by mouse, even if the `osgGA::TrackballManipulator` is attached. The reason is because we still have to "connect" the Qt GUI events with OSG events. I am planning to cover this in one of my next tutorials. [Go to Part 2](http://vicrucann.github.io/tutorials/qt-osg-navigation/). 
 
-## Codes
+# Codes
 
 You can find the code for this tutorial (both parts 1 and 2) on my [github repository](https://github.com/vicrucann/QtOSG-hello). Note, the presented code also contains parts of code related to [high DPI scaling](http://vicrucann.github.io/tutorials/osg-qt-high-dpi/) which can be easily omitted.
 
