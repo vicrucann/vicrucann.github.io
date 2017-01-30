@@ -1,12 +1,11 @@
 ---
 title: "Quick steps for OpenSceneGraph installation on Linux"
 categories: 
-	- Tutorials
+  - Tutorials
 excerpt: Detailed steps to download, compile and install the library; management of environment variables and example compilation.
 tags: 
-	- OpenSceneGraph 
-	- Linux 
-	- installation
+  - OpenSceneGraph
+  - Linux
 ---
 
 # Minimal steps for Linux
