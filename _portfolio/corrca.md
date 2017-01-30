@@ -18,7 +18,7 @@ gallery:
 date: 2013-12-01
 ---
 
-The tool allows correction of  lateral chromatic aberration correction in images through color planes warping. The implemented algorithm allows alignment of average 0.05 pixel of color channels. 
+The tool allows correction of  lateral chromatic aberration in images through color planes warping. The implemented algorithm allows alignment of average 0.05 pixel of color channels. 
 
 The tool's algorithm is based on the article [Precise Correction of Lateral Chromatic Aberration in Images](http://hal.archives-ouvertes.fr/docs/00/85/87/03/PDF/main_rudakovv_psivt13.pdf). 
 
