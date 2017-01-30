@@ -1,5 +1,5 @@
 ---
-title: "Step-by-step on how to set up your CMake, Qt and OSG in draw-on-demand mode (Part 1)
+title: "Step-by-step on how to set up your CMake, Qt and OSG in draw-on-demand mode (Part 1)"
 categories: 
     - Tutorials
 excerpt: A minimal CMake file that allows to set up a development environment to use with both OSG and Qt libraries. A running example of a minimal scene graph within the Qt application by performing all the redraws on demand. 
