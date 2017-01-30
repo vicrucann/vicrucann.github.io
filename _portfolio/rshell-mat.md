@@ -2,7 +2,7 @@
 title: "rshell-mat"
 excerpt: "Shell scripts represented by a Matlab interface class in order to imitate Matlab distributor."
 header:
-  image: /assets/images/teaser-ipag.jpg
+  #image: /assets/images/teaser-ipag.jpg
   teaser: /assets/images/cryo3d/rshell.png
 sidebar:
   - title: "Role"
