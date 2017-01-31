@@ -204,7 +204,8 @@ The above equation is used in order to obtain global coordinates for the *near* 
 \\[\text{near} = \text{(VPW)}^{-1} \cdot [x,y,0]^T\\]
 \\[\text{far} = \text{(VPW)}^{-1} \cdot [x,y,1]^T\\]
 
-**Note**: we do not have to normalize the coordinates of mouse point \\(m\\) because we are using OSG **window matrix** \\(W\\) which already takes care of normalization. {: .notice--info}
+**Note**: we do not have to normalize the coordinates of mouse point \\(m\\) because we are using OSG **window matrix** \\(W\\) which already takes care of normalization. 
+{: .notice--warning}
 
 This is how we use the above formulas in our code:
 
@@ -220,7 +221,8 @@ osg::Vec3f nearPoint = osg::Vec3f(ea.getX(), ea.getY(), 0.f) * invVPW;
 osg::Vec3f farPoint = osg::Vec3f(ea.getX(), ea.getY(), 1.f) * invVPW;
 {% endhighlight %}
 
-**Note**: the instance `ea` is of the type `osgGA::GUIEventAdapter&`; and its methods `getX()` and `getY()` return unnormalized mouse screen coordinates. {: .notice--info}
+**Note**: the instance `ea` is of the type `osgGA::GUIEventAdapter&`; and its methods `getX()` and `getY()` return unnormalized mouse screen coordinates. 
+{: .notice--info}
 
 ### Intersection between mouse ray and virtual plane
 
@@ -244,7 +246,8 @@ double x = plane.dotProductNormal(center-nearPoint) / plane.dotProductNormal(dir
 osg::Vec3f P = dir * x + nearPoint;
 {% endhighlight %}
 
-**Note**: we do not consider corner cases in the above code snippet, e.g., when the denominator is zero. Refer to the accompanying code sample for the fully functional code. {: .notice--info}
+**Note**: we do not consider corner cases in the above code snippet, e.g., when the denominator is zero. Refer to the accompanying code sample for the fully functional code. 
+{: .notice--danger}
  
 ### Global to local coordinate of the intersection point
 
@@ -260,7 +263,8 @@ float u=p.x();
 float v=p.z();
 {% endhighlight %}
 
-**Note**: the **global-local** projection transforms 3D coordinates into 2D. While, mathematically, we obtained 3D vector `p`, the coordinate `p.y()` is (very close to) zero. We only pass coordinates \\([u,v]\\) so that to not propagate that *close-to-zero* y-coordinate. When we create a `Stroke` within `Canvas`, we always set y-coordinate manually to zero. {: .notice--info}
+**Note**: the **global-local** projection transforms 3D coordinates into 2D. While, mathematically, we obtained 3D vector `p`, the coordinate `p.y()` is (very close to) zero. We only pass coordinates \\([u,v]\\) so that to not propagate that *close-to-zero* y-coordinate. When we create a `Stroke` within `Canvas`, we always set y-coordinate manually to zero. 
+{: .notice--info}
 
 # Conclusion
 
