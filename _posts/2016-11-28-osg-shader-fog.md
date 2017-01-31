@@ -188,5 +188,5 @@ Note: the same scene is displayed but at different distances from the camera poi
 
 # Code snippet
 
-To see a complete code snippet that allows basic scene generation and loading of the shaders, feel free to refer to [my gist](https://gist.github.com/vicrucann/3214c150012c6816c487a451a12590fe). 
+Check a bit more complex example - [shader-3dcurve](https://github.com/vicrucann/shader-3dcurve). The fogging effect is incorporated into the fragment shader of curve shader. 
 
