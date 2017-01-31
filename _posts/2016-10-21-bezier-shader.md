@@ -73,6 +73,6 @@ A few words on the color interpolation. For that part the main idea is to define
 [shader-3dcurve](https://github.com/vicrucann/shader-3dcurve) github repository contains the minimalistic OpenSceneGraph scene and the GLSL shaders that help to generate two curves located in different 3D planes: 
 
 <figure class="half">
-    <img src="/images/osg-shader-3dlines/curve-1.png" alt="image">
-    <img src="/images/osg-shader-3dlines/curve-2.png" alt="image">
+    <img src="/assets/images/osg-shader-3dlines/curve-1.png" alt="image">
+    <img src="/assets/images/osg-shader-3dlines/curve-2.png" alt="image">
 </figure>

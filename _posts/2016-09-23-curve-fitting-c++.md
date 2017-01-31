@@ -12,8 +12,8 @@ tags:
 {% include toc %}
 
 <figure class="half">
-	<img src="/images/curve-fitting/traced.png" alt="image">
-	<img src="/images/curve-fitting/fitted.png" alt="image">
+	<img src="/assets/images/curve-fitting/traced.png" alt="image">
+	<img src="/assets/images/curve-fitting/fitted.png" alt="image">
 	<figcaption>Screenshots of drawn line (left) and curve fitted (right). Note how some details and noise are lost due to the larger fitting threshold.</figcaption>
 </figure>
 

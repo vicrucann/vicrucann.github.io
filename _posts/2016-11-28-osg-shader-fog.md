@@ -181,8 +181,8 @@ void main(void)
 
 Here are some screenshots of the result fog imitation:
 
-![Fog imitation]({{ site.url }}/images/osg-shader-3dlines/fog.png)
-{: .pull-center}
+![Fog imitation]({{ site.url }}{{ site.baseurl }}/assets/images/osg-shader-3dlines/fog.png)
+{: .align-center}
 
 Note: the same scene is displayed but at different distances from the camera point (zoom-out operator performed).
 

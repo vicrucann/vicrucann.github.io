@@ -42,8 +42,8 @@ We choose constant coordinates for the four points (vertices) which are spread a
 
 The figure below is an example of the canvas representation:
 
-![Canvas representation]({{ site.url }}/images/osg-raycast/canvas.png)
-{: .pull-center}
+![Canvas representation]({{ site.url }}{{ site.baseurl }}/assets/images/osg-raycast/canvas.png)
+{: .align-center}
 
 The canvas class implementation consist of the next elements:
 
@@ -113,8 +113,8 @@ protected:
 When the stroke is drawn on the canvas, it lies within the canvas' virtual plane:
 
 <figure class="half">
-    <img src="/images/osg-raycast/canvas-stroke-1.png" alt="image">
-    <img src="/images/osg-raycast/canvas-stroke-2.png" alt="image">
+    <img src="/assets/images/osg-raycast/canvas-stroke-1.png" alt="image">
+    <img src="/assets/images/osg-raycast/canvas-stroke-2.png" alt="image">
 </figure>
 
 # Ray cast event handler
@@ -150,8 +150,8 @@ Given the event handler's API above, we will mainly focus on the content of `get
 
 ## Local coordinate system
 
-![Canvas representation]({{ site.url }}/images/osg-raycast/global-local.png)
-{: .pull-center}
+![Canvas representation]({{ site.url }}{{ site.baseurl }}/assets/images/osg-raycast/global-local.png)
+{: .align-center}
 
 Each canvas has its own local coordinate system. Since the canvas is represented by a plane, and the plane is represented by a center point \\(C\\) and normal \\(\vec{n}\\), we place the local coordinate system around plane's central point \\(C\\), and that system is two-dimensional. For simplicity, we also orient the local coordinate axes \\(\vec{U}\\) and \\(\vec{V}\\) aligned with the global axes \\(\vec{X}\\) and \\(\vec{Z}\\).
 
@@ -174,8 +174,8 @@ We follow standard steps of the ray cast algorithm:
 
 ### *Near* and *far* points of mouse ray
 
-![VPW matrix and its inverse]({{ site.url }}/images/osg-raycast/VPW.png)
-{: .pull-center}
+![VPW matrix and its inverse]({{ site.url }}{{ site.baseurl }}/assets/images/osg-raycast/VPW.png)
+{: .align-center}
 
 Based on line equation \\(P = x\vec{d} + d_0\\): when we do the ray casting, we only have to deal with a line segment which is enclosed between *far* and *near* points of the mouse ray. The two points are enough in order to get the line variables:
 
@@ -275,8 +275,8 @@ The main task of the tutorial is to provide mathematical and coding basis for th
 The figures below demonstrate how the output of the coding example looks like. Note, the drawing is done by the right mouse button, while the left button remains to belong to camera manipulator (orbit).
 
 <figure class="half">
-    <img src="/images/osg-raycast/osg-raycast-1.png" alt="image">
-    <img src="/images/osg-raycast/osg-raycast-2.png" alt="image">
+    <img src="/assets/images/osg-raycast/osg-raycast-1.png" alt="image">
+    <img src="/assets/images/osg-raycast/osg-raycast-2.png" alt="image">
 </figure>
 
 # Codes

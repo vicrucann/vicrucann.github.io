@@ -54,25 +54,25 @@ This structure allows me to always add different OSG versions while keeping the 
 
 To build and MSVC solution project, we have to run CMake-GUI first. As a generator, specify `Visual Studio 2013`. Chose the source folder and build folder and hit `Configure`.
 
-![CMake OSG]({{ site.url }}/images/osg-win-install/qtosg-1.png)
-{: .pull-center}
+![CMake OSG]({{ site.url }}{{ site.baseurl }}/assets/images/osg-win-install/qtosg-1.png)
+{: .align-center}
 
 Once first configure is done, you can specify and set some variables. Assuming minimal install, we can check for `BUILD_OSG_EXAMPLES` as well as specify `CMAKE_INSTALL_PREFIX` so that it does not contain spaces: we provide the same path as where we have our build directory.
 
-![CMake OSG]({{ site.url }}/images/osg-win-install/qtosg-2.png)
-{: .pull-center}
+![CMake OSG]({{ site.url }}{{ site.baseurl }}/assets/images/osg-win-install/qtosg-2.png)
+{: .align-center}
 
 We hit `Configure` one more time, then we hit `Generate`.
 
-![CMake OSG]({{ site.url }}/images/osg-win-install/qtosg-3.png)
-{: .pull-center}
+![CMake OSG]({{ site.url }}{{ site.baseurl }}/assets/images/osg-win-install/qtosg-3.png)
+{: .align-center}
 
 ## Building OSG using MSVC compiler
 
 Now the OpenSceneGraph MSVC project is generated and we can proceed to building it using the MSVC compiler. We open `OpenSceneGraph.sln` file which is located inside the build directory `C:\OpenSceneGraph\3.4.0\msvc2013-32bit`.
 
-![CMake OSG]({{ site.url }}/images/osg-win-install/qtosg-4.png)
-{: .pull-center}
+![CMake OSG]({{ site.url }}{{ site.baseurl }}/assets/images/osg-win-install/qtosg-4.png)
+{: .align-center}
 
 We press `Build Solution` or, as MSVC suggests, `<Ctrl>+<Shift>+B` to run the same command.
 
@@ -80,8 +80,8 @@ It might take some times to perform the build. On newer machines - from 20 minut
 
 After the build is complete, we need to install it. The installation build performs copying the built files into the right directories (`include`, `lib` and `bin`):
 
-![CMake OSG]({{ site.url }}/images/osg-win-install/qtosg-5.png)
-{: .pull-center}
+![CMake OSG]({{ site.url }}{{ site.baseurl }}/assets/images/osg-win-install/qtosg-5.png)
+{: .align-center}
 
 We need to run `Build` command for `INSTALL` project as shown on figure above. And this is all you need to perform the build and installation of the OSG library.
 
@@ -89,15 +89,15 @@ We need to run `Build` command for `INSTALL` project as shown on figure above. A
 
 You might want to perform build two times: one is debug mode, and second - in release. To do it, chose the corresponding setting at the MSVC top build menu:
 
-![CMake OSG]({{ site.url }}/images/osg-win-install/qtosg-6.png)
-{: .pull-center}
+![CMake OSG]({{ site.url }}{{ site.baseurl }}/assets/images/osg-win-install/qtosg-6.png)
+{: .align-center}
 
 You will need to build the `INSTALL` project for each of the builds.
 
 # Environment variables
 
-![CMake OSG]({{ site.url }}/images/osg-win-install/qtosg-7.png)
-{: .pull-center}
+![CMake OSG]({{ site.url }}{{ site.baseurl }}/assets/images/osg-win-install/qtosg-7.png)
+{: .align-center}
 
 In order to use the installed OSG library for your development projects, it is necessary to set up the correct environment variables. I found those are the variables that worked on my new Windows 10 machine with CMake version 3.4.3:
 
@@ -110,5 +110,5 @@ OSG_LIB_DIR = %OSG_ROOT%\lib
 
 We must add to the `Path` variable: `%OSG_BIN_DIR%`. Now the OSG library is fully built and configured to be used.
 
-![CMake OSG]({{ site.url }}/images/osg-win-install/qtosg-8.png)
-{: .pull-center}
+![CMake OSG]({{ site.url }}{{ site.baseurl }}/assets/images/osg-win-install/qtosg-8.png)
+{: .align-center}

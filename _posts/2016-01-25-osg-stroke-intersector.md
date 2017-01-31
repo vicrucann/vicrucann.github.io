@@ -25,8 +25,8 @@ This tutorial is potentially not complete[^next] and aimed to only provide a bas
 
 We define a line segment as two vertices connected by a line (edge). 
 
-![Line segment representation]({{ site.url }}/images/osg-stroke-selector/line-segment.png)
-{: .pull-center}
+![Line segment representation]({{ site.url }}{{ site.baseurl }}/assets/images/osg-stroke-selector/line-segment.png)
+{: .align-center}
 
 Our line segment class should allow us to set up the coordinates for the segment ends, and also change the segment color, for example, when it is selected by user. It has the following interface:
 
@@ -163,8 +163,8 @@ virtual bool handle(const osgGA::GUIEventAdapter& ea, osgGA::GUIActionAdapter& a
 
 In this brief tutorial we demonstrated how to use point selector example of *OpenSceneGraph Cookbook*[^ref_cookbook] and derive your own line segment selector. This tutorial is not complete since it only allows stroke selection by clicking close to the stroke vertices (\\(x_0\\) and \\(x_1\\) on the figure below). The complete version would mean to perform selection when clicked close to any point \\(x_i\\) on the line segment.
 
-![Line segment selection]({{ site.url }}/images/osg-stroke-selector/selection-complete.png)
-{: .pull-center}
+![Line segment selection]({{ site.url }}{{ site.baseurl }}/assets/images/osg-stroke-selector/selection-complete.png)
+{: .align-center}
 
 For the moment, this part is out-of-scope of this tutorial. However, it is covered in the [second part](http://vicrucann.github.io/tutorials/osg-stroke-intersector-improved/) of the tutorial.
 

@@ -50,8 +50,8 @@ This is the list of other `dll` files that may be necessary to run a Qt executab
 
 After I assembled a folder for an executable of my CAD-like program, these are some files that ended up in my `exe` folder:
 
-![Structure]({{ site.url }}/images/qtosg-binary/structure.png)
-{: .pull-center}
+![Structure]({{ site.url }}{{ site.baseurl }}/assets/images/qtosg-binary/structure.png)
+{: .align-center}
 
 ## Edit
 

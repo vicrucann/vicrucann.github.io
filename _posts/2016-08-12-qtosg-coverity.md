@@ -70,8 +70,8 @@ I used the same [QtOSG-hello example](https://github.com/vicrucann/QtOSG-hello) 
 
 Unfortunately, Coverity Scan does not allow scans for test projects, so I could not keep the project at my Coverity Scan account. As a proof of the concept, I only have this screenshot: 
 
-![Coverity passed]({{ site.url }}/images/qtosg-coverity/coverity.png)
-{: .pull-center}
+![Coverity passed]({{ site.url }}{{ site.baseurl }}/assets/images/qtosg-coverity/coverity.png)
+{: .align-center}
 
 One of my bigger projects rely on Coverity Scan for defect search, so I put a link for that project here too:
 

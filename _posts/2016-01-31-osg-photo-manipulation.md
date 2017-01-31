@@ -83,8 +83,8 @@ m_height = m_width / aspectRatio;
 
 When performing the texture mapping, it is important to keep in mind what sequence and what direction you go when specifying the vertices for both of the **2D texture** and **geometrical object**. For this tutorial we choose the starting point to be a lower left corner, and the direction to be counter-clockwise:
 
-![Texture mapping]({{ site.url }}/images/osg-photo-manipulation/mapping.png)
-{: .pull-center}
+![Texture mapping]({{ site.url }}{{ site.baseurl }}/assets/images/osg-photo-manipulation/mapping.png)
+{: .align-center}
 
 Based on this principle, we specify the texture coordinates:
 
@@ -130,8 +130,8 @@ By making the **geometrical object's** vertices to be calculated based on rotati
 
 [^ref_wiki]: [Rotation Matrix](https://en.wikipedia.org/wiki/Rotation_matrix)
 
-![Geometry mapping]({{ site.url }}/images/osg-photo-manipulation/geometry.png)
-{: .pull-center}
+![Geometry mapping]({{ site.url }}{{ site.baseurl }}/assets/images/osg-photo-manipulation/geometry.png)
+{: .align-center}
 
 **Note:** We place our **geometrical object** within plane `XZ`. That is why its center is defined by coordinates in `X` and `Z`.
 {: .notice--info}
@@ -171,8 +171,8 @@ In code above the scaling is defined to be proportional, i.e., the width and hei
 ## Flipping
 The flipping procedure does not look as straightforward as other operators. In simple words, flipping is supposed to behave like a mirror by providing a reflection of an original object. The reflection can happen in two direction: vertically and horizontally. 
 
-![Geometry mapping]({{ site.url }}/images/osg-photo-manipulation/flips.png)
-{: .pull-center}
+![Geometry mapping]({{ site.url }}{{ site.baseurl }}/assets/images/osg-photo-manipulation/flips.png)
+{: .align-center}
 
 For `Photo` class the flipping is done by swapping the sequence of texture vertices. The horizontal flip is then implemented as:
 

@@ -37,23 +37,23 @@ When installed and running, *RescueTime* is collecting application usage statist
 
 Whenever I go my *dashboard*, I see my daily statistics data:
 
-![RT-dashboard]({{ site.url }}/images/rescue-time/RT-dayly.jpg)
-{: .pull-center}
+![RT-dashboard]({{ site.url }}{{ site.baseurl }}/assets/images/rescue-time/RT-dayly.jpg)
+{: .align-center}
 
 From that quick overview, I can already tell how well I perform compared to the previous day. The big number in a circle indicates a *productivity pulse* which is a percentage measure of your productivity. In my case it is about 82%. That number starts to make more sense as you learn about your weekly productivity. 
 
 It is also possible to see statistics over several month or even years (for that, you would need to upgrade you account). 
 
-![RT-dashboard]({{ site.url }}/images/rescue-time/RT-monthly.jpg)
-{: .pull-center}
+![RT-dashboard]({{ site.url }}{{ site.baseurl }}/assets/images/rescue-time/RT-monthly.jpg)
+{: .align-center}
 
-![RT-dashboard]({{ site.url }}/images/rescue-time/RT-total.jpg)
-{: .pull-center}
+![RT-dashboard]({{ site.url }}{{ site.baseurl }}/assets/images/rescue-time/RT-total.jpg)
+{: .align-center}
 
 Another interesting feature is statistics over tasks. It will provide you an insight what activities take most of your time:
 
-![RT-dashboard]({{ site.url }}/images/rescue-time/RT-tasks.jpg)
-{: .pull-center}
+![RT-dashboard]({{ site.url }}{{ site.baseurl }}/assets/images/rescue-time/RT-tasks.jpg)
+{: .align-center}
 
 Hopefully, by now you have a basic idea how visually appealing and convenient the tool is. There are many more features that could be useful, and I will name few of them:
 

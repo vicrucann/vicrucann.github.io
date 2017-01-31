@@ -13,8 +13,8 @@ tags:
 
 For this problem we are given `QTreeWidget` which consists of set of parents which can have a set of children. For simplicity we set the children to behave like leafs which means they cannot have their own children. The figure below provides an example of such tree structure:
 
-![QTreeWidget example structure]({{ site.url }}/images/qtreewidget-drag/qtree-example.png)
-{: .pull-center}
+![QTreeWidget example structure]({{ site.url }}{{ site.baseurl }}/assets/images/qtreewidget-drag/qtree-example.png)
+{: .align-center}
 
 Assume, we have implemented the rules for drag and drop of the children, for example, we can only drag one child at a time to another parent; and we cannot drag the parent at all.
 

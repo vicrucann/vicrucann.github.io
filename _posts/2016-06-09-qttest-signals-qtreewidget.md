@@ -45,8 +45,8 @@ QVERIFY(args.at(0).type() == QVariant::ModelIndex);
 
 # Event within an item's button of the tree widget
 
-![QTreeWidget example]({{ site.url }}/images/treewidget.png)
-{: .pull-center}
+![QTreeWidget example]({{ site.url }}{{ site.baseurl }}/assets/images/treewidget.png)
+{: .align-center}
 
 Assume we are given a `QTreeWidget* treeWidget;`, which has its own delegate where it is defined how to place buttons within it, and also how to process mouse events, for example, if the user presses on one of the buttons. We want to be able to simulate those mouse events and check if the necessary signals are emitted. The below snippet provides the basic idea on how to achieve it. 
 

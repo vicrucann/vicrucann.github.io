@@ -22,8 +22,8 @@ This tutorial is more expanded version of an answer on my [stackoverflow questio
 
 The default OpenGL drawing of line strip geometry does not allow to render smooth (non-broken) lines, as well as to render them of customary thicker than default width:
 
-![Line strip geometry polyline]({{ site.url }}/images/osg-shader-3dlines/line_strip.png)
-{: .pull-center}
+![Line strip geometry polyline]({{ site.url }}{{ site.baseurl }}/assets/images/osg-shader-3dlines/line_strip.png)
+{: .align-center}
 
 # Main principle
 
@@ -134,18 +134,18 @@ osg::DisplaySettings::instance()->setNumMultiSamples(4);
 
 Some screenshots of the result lines. The red color line is drawn by using OpenGL default `GL_LINE_STRIP`, while the greenish line is drawn by using the shader program. Note how the connection between the anchor point does not look broken compared to the red line. For this case we turned on the multi-sampling.
 
-![Smooth connection]({{ site.url }}/images/osg-shader-3dlines/line_smooth.png)
-{: .pull-center}
+![Smooth connection]({{ site.url }}{{ site.baseurl }}/assets/images/osg-shader-3dlines/line_smooth.png)
+{: .align-center}
 
 The demonstration of ability to produce much thicker lines. Not only the connection is smoother, but the line width can be set to any value. For this test we turned off the multi-sampling, just to demonstrate the visual difference.
 
-![Thicker line]({{ site.url }}/images/osg-shader-3dlines/line_thick.png)
-{: .pull-center}
+![Thicker line]({{ site.url }}{{ site.baseurl }}/assets/images/osg-shader-3dlines/line_thick.png)
+{: .align-center}
 
 Another, more general example of two lines drawn by different methods, side by side:
 
-![General comparison]({{ site.url }}/images/osg-shader-3dlines/line_all.png)
-{: .pull-center}
+![General comparison]({{ site.url }}{{ site.baseurl }}/assets/images/osg-shader-3dlines/line_all.png)
+{: .align-center}
 
 # Codes
 

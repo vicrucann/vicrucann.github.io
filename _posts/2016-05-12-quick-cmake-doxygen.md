@@ -86,8 +86,8 @@ INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/../src/ @CMAKE_CURRENT_SOURC
 
 Those settings were enough to get me started with the Doxygen. As a result I now have a set of generated `.html` pages of my project's API. The only thing left is to edit the code comments in correspondence with Doxygen syntax.
 
-![Doxumentation]({{ site.url }}/images/quick-cmake-doxygen.png)
-{: .pull-center}
+![Doxumentation]({{ site.url }}{{ site.baseurl }}/assets/images/quick-cmake-doxygen.png)
+{: .align-center}
 
 # Update
 

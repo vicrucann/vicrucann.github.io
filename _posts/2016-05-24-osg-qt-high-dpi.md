@@ -34,14 +34,14 @@ While setting up this attribute to `ON` does its best in high DPI support, it st
 * Multi-monitor with different DPI: bad awareness, i.e., some elements like buttons scale better than other (i.e. window title) as a result it produces an ugly different-size fonts window (see example figure below).
 
 <figure class="half">
-    <img src="/images/osg-qt-high-dpi/normal-dpi.png" alt="image">
-    <img src="/images/osg-qt-high-dpi/high-dpi-failed.png" alt="image">
+    <img src="/assets/images/osg-qt-high-dpi/normal-dpi.png" alt="image">
+    <img src="/assets/images/osg-qt-high-dpi/high-dpi-failed.png" alt="image">
     <figcaption>Left: DPI support is off; right: DPI support is on. Note the OpenGL content scaling issue on the right. </figcaption>
 </figure>
 
 <figure class="half">
-    <img src="/images/osg-qt-high-dpi/high-dpi-gui.png" alt="image">
-    <img src="/images/osg-qt-high-dpi/normal-dpi-gui.png" alt="image">
+    <img src="/assets/images/osg-qt-high-dpi/high-dpi-gui.png" alt="image">
+    <img src="/assets/images/osg-qt-high-dpi/normal-dpi-gui.png" alt="image">
     <figcaption>DPI support is ON for multi-monitor and different DPI; left: main high DPI monitor; right: second low DPI monitor. While the problem with the OpenGL content scaling persists for high DPI monitor on the left, the font is not scaled correctly on low resolution monitor for different GUI elements such as window title. </figcaption>
 </figure>
 
