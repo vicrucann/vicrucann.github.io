@@ -128,7 +128,7 @@ void Photo::updateVertices()
 
 By making the **geometrical object's** vertices to be calculated based on rotation, width, height and image center, all we need to do when changing those parameters, is to call `updateVertices()`, and it will re-calculate the vertices. We are not going to provide the step-be step mathematics behind those functions since they are pretty basic[^ref_wiki]. The main principles of the geometrical transforms are displayed below on the figure:
 
-[ref_wiki]: [Rotation Matrix](https://en.wikipedia.org/wiki/Rotation_matrix)
+[^ref_wiki]: [Rotation Matrix](https://en.wikipedia.org/wiki/Rotation_matrix)
 
 ![Geometry mapping]({{ site.url }}/images/osg-photo-manipulation/geometry.png)
 {: .pull-center}
@@ -214,7 +214,7 @@ m_photo->move(0.2, 0.2);
 # Conclusion
 
 This tutorial provides an example of how to design your own`Photo` class that behaves like a photographic object on 3D scene. Thanks to its parametric representation, it is possible to introduce changes like movement to another location, scaling, flipping and rotation.
-[]
+
 # Codes
 
 [Check my gist](https://gist.github.com/vicrucann/c8163ff18f5699182995d7254fb8ede4) for this specific tutorial.
