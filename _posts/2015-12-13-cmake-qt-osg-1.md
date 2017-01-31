@@ -104,7 +104,7 @@ int main(int argc, char** argv){
 
 This piece of code will produce an empty window:
 
-![Empty Window]({{ site.url }}/images/osg-cmake-minimal/empty-window.png)
+![Empty Window]({{ site.url }}/assets/images/osg-cmake-minimal/empty-window.png)
 {: .pull-center}
 
 Our next task is to redefine a `QWidget` so that it uses OSG graphics context and scene elements.
