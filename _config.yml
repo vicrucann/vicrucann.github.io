@@ -12,8 +12,8 @@ title_separator          : "|"
 name                     : "Victoria Rudakova"
 description              : "Professional blog and tutorials on using different tools for vision and graphics applications"
 url                      : "https://vicrucann.github.io"
-baseurl                  : "/minimal-mistakes"
-repository               : "vicrucann/minimal-mistakes"
+baseurl                  : #"/minimal-mistakes"
+repository               : "vicrucann/vicrucann.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 180
