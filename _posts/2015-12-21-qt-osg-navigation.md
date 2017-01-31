@@ -74,7 +74,7 @@ virtual void mousePressEvent(QMouseEvent* event)
   }
 {% endhighlight %}
 
-Similarly, we can re-define the mouse release and move events. See the corresponding [tutorial code](https://github.com/vicrucann/vicrucann-tutorials/tree/master/qtosg-base) for details.
+Similarly, we can re-define the mouse release and move events.
 
 # Conclusion
 
