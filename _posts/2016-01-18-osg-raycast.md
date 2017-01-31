@@ -205,6 +205,7 @@ The above equation is used in order to obtain global coordinates for the *near* 
 \\[\text{far} = \text{(VPW)}^{-1} \cdot [x,y,1]^T\\]
 
 **Note**: we do not have to normalize the coordinates of mouse point \\(m\\) because we are using OSG **window matrix** \\(W\\) which already takes care of normalization.
+{: .notice--info}
 
 This is how we use the above formulas in our code:
 
