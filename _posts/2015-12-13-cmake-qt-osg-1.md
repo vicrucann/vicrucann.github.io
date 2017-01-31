@@ -104,8 +104,8 @@ int main(int argc, char** argv){
 
 This piece of code will produce an empty window:
 
-![Empty Window]({{ site.url }}/assets/images/osg-cmake-minimal/empty-window.png)
-{: .pull-center}
+![Empty Window]({{ site.url }}{{ site.baseurl }}/assets/images/osg-cmake-minimal/empty-window.png)
+{: .align-center}
 
 Our next task is to redefine a `QWidget` so that it uses OSG graphics context and scene elements.
 
@@ -209,8 +209,8 @@ virtual void paintGL() {
 
 If we try to compile and run our program at this stage, the scene will indeed be rendered and we will see our cylinder. However, since we did not set up viewport and projection parmeters, it will appear very small in the left lower corner:
 
-![Frame Window]({{ site.url }}/images/osg-cmake-minimal/frame-window.png)
-{: .pull-center}
+![Frame Window]({{ site.url }}{{ site.baseurl }}/assets/images/osg-cmake-minimal/frame-window.png)
+{: .align-center}
 
 Re-implementation of the `resizeGL()` method where we can set up the necessary parameters will solve this problem. For that we will use a helper method that is contained in **graphics window** called `getEventQueue()` to manage GUI events (to read more about graphics window and graphics context, refer to the book *OpenSceneGraph: beginner's guide*, chapter 9). 
 
@@ -231,8 +231,8 @@ virtual void resizeGL( int width, int height ) {
 
 Now if we render our scene, we will see that the viewport is set up and the cylinder is located at the center of the screen:
 
-![Frame Window]({{ site.url }}/images/osg-cmake-minimal/resize-window.png)
-{: .pull-center}
+![Frame Window]({{ site.url }}{{ site.baseurl }}/assets/images/osg-cmake-minimal/resize-window.png)
+{: .align-center}
 
 We re-implement `initializeGL()` to define the OpenGL state of the scene:
 
@@ -249,8 +249,8 @@ virtual void initializeGL(){
 
 When we run our program this time, the cylinder renders correctly, without any artifacts:
 
-![Frame Window]({{ site.url }}/images/osg-cmake-minimal/init-window.png)
-{: .pull-center}
+![Frame Window]({{ site.url }}{{ site.baseurl }}/assets/images/osg-cmake-minimal/init-window.png)
+{: .align-center}
 
 # Conclusion
 
