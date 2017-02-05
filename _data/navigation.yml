@@ -2,8 +2,8 @@
 main:
   - title: "All Entries"
     url: /year-archive/
+  - title: "About"
+    url: /about/
   - title: "Contact"
-    url: /contact/
-#  - title: "About"
-#    url: /about/
+    url: /contact/t
 
