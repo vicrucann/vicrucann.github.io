@@ -6,7 +6,7 @@ title: "About"
 
 > Hi there - I'm Victoria Rudakova, a researcher and developer at [Graphics lab](http://graphics.cs.yale.edu/site/) of Yale University. My current work specializes on application domains such as computer graphics, vision and user interaction. 
 
-## Mist facts
+## Misc facts
 
 * My **first programming language** was *assembly*, and my first programming Bible was a Russian book [Assembly For Dos, Windows and Linux](http://a.co/hNwBceL) by [Sergey Zubkov](http://cubbi.com/). My first high level language was *Object Pascal* within the *Borland Delphi* environment.
 * I'm very **passionate** about programming and software development since it allows me to use my brain in order to solve puzzles, and gives me a power to create something from a scratch with my own-defined logic. 
