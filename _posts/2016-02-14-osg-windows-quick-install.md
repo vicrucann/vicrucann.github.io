@@ -23,10 +23,10 @@ We will also need a [CMake](https://cmake.org/) tool for building out of source;
 
 # Download
 
-To download the latest stable version (or the latest development version if you wish), clone from the [official OpenSceneGraph github repository](https://github.com/openscenegraph/osg). Using the `git bash` command line, enter the following commands in a directory where you plan to install OSG, e.g., `C:/OpenSceneGraph`.
+To download the latest stable version (or the latest development version if you wish), clone from the [official OpenSceneGraph github repository](https://github.com/openscenegraph/OpenSceneGraph). Using the `git bash` command line, enter the following commands in a directory where you plan to install OSG, e.g., `C:/OpenSceneGraph`.
 
 {% highlight bash %}
-C:/OpenSceneGraph $ git clone https://github.com/openscenegraph/osg
+C:/OpenSceneGraph $ git clone https://github.com/openscenegraph/OpenSceneGraph
 {% endhighlight %}
 
 Assuming you want to use the latest stable version of OSG, switch the branch inside the local repository:
