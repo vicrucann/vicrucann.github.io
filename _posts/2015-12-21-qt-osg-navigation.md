@@ -117,9 +117,11 @@ After all the event are re-defined, our sample scene (cylinder) can be manipulat
 
 # Conclusion
 
-This tutorial concludes the minimal CMake, Qt and OSG set up. The second part concentrated mainly on how to use Qt events in order to trigger OSG events, and an example of mouse events (press, release, move) were considered. 
+This tutorial concludes the minimal CMake, Qt and OSG set up when the scene is rendered without a timer, **on-demand** mode. The second part concentrated mainly on how to use Qt events in order to trigger OSG events, and an example of mouse events (press, release, move) were presented. 
 
 # Codes
+
+[View Code](https://github.com/vicrucann/QtOSG-hello){: .btn--inverse}
 
 You can find the code for this tutorial (both parts 1 and 2) on my [github repository](https://github.com/vicrucann/QtOSG-hello). Note, the presented code also contains parts of code related to [high DPI scaling](http://vicrucann.github.io/tutorials/osg-qt-high-dpi/) which can be easily omitted.
 
