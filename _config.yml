@@ -15,6 +15,7 @@ url                      : "https://vicrucann.github.io"
 baseurl                  : #"/minimal-mistakes"
 repository               : "vicrucann/vicrucann.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+favicon                  : "assets/images/icon/favicon.ico"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 150
 comments:
