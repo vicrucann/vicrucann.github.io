@@ -49,9 +49,13 @@ Now we can re-define other Qt mouse events. The main idea is to obtain mouse par
 How to do it? Here we will get a help from `getEventQueue()` method (we showed how to implement it in [Part 1](http://vicrucann.github.io/tutorials/cmake-qt-osg-1/) ) which returns an **event queue** from the used **graphics window**. In our case the **event queue** serves as a collector and adaptor of window events. If we look at the [source code
 of `osgGA::EventQueue`](https://github.com/openscenegraph/osg/blob/master/include/osgGA/EventQueue), we can see what types of events can be triggered in OSG, and also what parameters they take. 
 
-As an example, let's take the `mouseButtonPress(float x, float y, unsigned int button)`. In order to trigger a mouse button pressed event, we have to provide mouse coordinates, as well as a `button` code. We can find the `enum MouseButtonMask{}` with button masks in a [source code for `GUIEventAdapter` class](https://github.com/openscenegraph/osg/blob/master/include/osgGA/GUIEventAdapter).
+As an example, let's take the `mouseButtonPress(float x, float y, unsigned int button)`. In order to trigger a **mouse button pressed** event, we have to provide mouse coordinates, as well as a `button` code.
 
-Now we are going to trigger the `mouseButtonPress` from Qt's `mousePressEvent`:
+From the [EventQueue](https://github.com/openscenegraph/OpenSceneGraph/blob/master/include/osgGA/EventQueue) file on the mouse button press event:
+
+>  Method for adapting mouse button pressed events, placing this event on the back of the event queue. Button numbering is 1 for left mouse button, 2 for middle, 3 for right.
+
+So, we only have to pass the right button code. To trigger the `mouseButtonPress` from Qt's `mousePressEvent`:
 
 {% highlight cpp %}
 virtual void mousePressEvent(QMouseEvent* event)
@@ -59,13 +63,13 @@ virtual void mousePressEvent(QMouseEvent* event)
       unsigned int button = 0;
       switch (event->button()){
       case Qt::LeftButton:
-          button = 1<<0;
+          button = 1;
           break;
       case Qt::MiddleButton:
-          button = 1<<1;
+          button = 2;
           break;
       case Qt::RightButton:
-          button = 1<<2;
+          button = 3;
           break;
       default:
           break;
@@ -74,7 +78,42 @@ virtual void mousePressEvent(QMouseEvent* event)
   }
 {% endhighlight %}
 
-Similarly, we can re-define the mouse release and move events.
+Similarly, we have to re-define the **mouse release** event:
+
+{% highlight cpp %} 
+virtual void mouseReleaseEvent(QMouseEvent* event)
+  {
+      unsigned int button = 0;
+      switch (event->button()){
+      case Qt::LeftButton:
+          button = 1;
+          break;
+      case Qt::MiddleButton:
+          button = 2;
+          break;
+      case Qt::RightButton:
+          button = 3;
+          break;
+      default:
+          break;
+      }
+      this->getEventQueue()->mouseButtonRelease(event->x(), event->y(), button);
+  }
+{% endhighlight %}
+
+Same manner we can also re-define the **mouse wheel** event. The only difference between the mouse click events and the scroll event, we have to pass the `motion` variable of the type `osgGA::GUIEVentAdapter::ScrollingMotion`, which is an`enum` type of the file [`GUIEventAdapter`](https://github.com/openscenegraph/OpenSceneGraph/blob/master/include/osgGA/GUIEventAdapter). For the simplest mouse moves, we can define whether the mouse scroll was performed `UP` or `DOWN`. The code would look as follows:
+
+{%highlight cpp%}
+virtual void wheelEvent(QWheelEvent* event)
+  {
+      int delta = event->delta();
+      osgGA::GUIEventAdapter::ScrollingMotion motion = delta > 0 ?
+                  osgGA::GUIEventAdapter::SCROLL_UP : osgGA::GUIEventAdapter::SCROLL_DOWN;
+      this->getEventQueue()->mouseScroll(motion);
+  }
+{%endhighlight%}
+
+After all the event are re-defined, our sample scene (cylinder) can be manipulated by using right and left buttons of the mouse, as well as the wheel. The aforementioned manipulations allow the camera pose change by rotation, pan and zoom.
 
 # Conclusion
 
