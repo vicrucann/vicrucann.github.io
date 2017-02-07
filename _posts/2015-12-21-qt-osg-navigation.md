@@ -33,6 +33,8 @@ The next step is to define what events of `QOpenGLWidget` are needed to be redef
 * `wheelEvent()`
 * `event()` - inherited from `QWidget`. It needs to be re-implemented so that to insure re-draw is performed after every user interaction.
 
+## `event()` method
+
 We start from `event` method which calls an `update()` function every time there is an event from user:
 
 {% highlight cpp %}
@@ -48,6 +50,8 @@ Now we can re-define other Qt mouse events. The main idea is to obtain mouse par
 
 How to do it? Here we will get a help from `getEventQueue()` method (we showed how to implement it in [Part 1](http://vicrucann.github.io/tutorials/cmake-qt-osg-1/) ) which returns an **event queue** from the used **graphics window**. In our case the **event queue** serves as a collector and adaptor of window events. If we look at the [source code
 of `osgGA::EventQueue`](https://github.com/openscenegraph/osg/blob/master/include/osgGA/EventQueue), we can see what types of events can be triggered in OSG, and also what parameters they take. 
+
+## `mouseButtonPress()` event
 
 As an example, let's take the `mouseButtonPress(float x, float y, unsigned int button)`. In order to trigger a **mouse button pressed** event, we have to provide mouse coordinates, as well as a `button` code.
 
@@ -78,6 +82,8 @@ virtual void mousePressEvent(QMouseEvent* event)
   }
 {% endhighlight %}
 
+## `mouseReleaseEvent()` method
+
 Similarly, we have to re-define the **mouse release** event:
 
 {% highlight cpp %} 
@@ -101,6 +107,8 @@ virtual void mouseReleaseEvent(QMouseEvent* event)
   }
 {% endhighlight %}
 
+## `mouseWheelEvent()` method
+
 Same manner we can also re-define the **mouse wheel** event. The only difference between the mouse click events and the scroll event, we have to pass the `motion` variable of the type `osgGA::GUIEVentAdapter::ScrollingMotion`, which is an`enum` type of the file [`GUIEventAdapter`](https://github.com/openscenegraph/OpenSceneGraph/blob/master/include/osgGA/GUIEventAdapter). For the simplest mouse moves, we can define whether the mouse scroll was performed `UP` or `DOWN`. The code would look as follows:
 
 {%highlight cpp%}
@@ -121,7 +129,7 @@ This tutorial concludes the minimal CMake, Qt and OSG set up when the scene is r
 
 # Codes
 
-[View Code](https://github.com/vicrucann/QtOSG-hello){: .btn--inverse}
+[View Code](https://github.com/vicrucann/QtOSG-hello){: .btn}
 
 You can find the code for this tutorial (both parts 1 and 2) on my [github repository](https://github.com/vicrucann/QtOSG-hello). Note, the presented code also contains parts of code related to [high DPI scaling](http://vicrucann.github.io/tutorials/osg-qt-high-dpi/) which can be easily omitted.
 
