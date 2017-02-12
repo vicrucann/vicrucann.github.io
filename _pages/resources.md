@@ -20,6 +20,10 @@ In this list I try to include some of my favorite resources. This list is occasi
 * [Land any job you want](http://landanyjobyouwant.com/) - an unconventional career advice blog. In my opinion, one of the best career advice on the Internet. The blog often highlights different techniques on how to get way before any other candidate when applying for a job position. The author provides lots of real examples and step-by-step instructions on how to land your perfect job.
 * [Communication for nerds](http://www.communicationfornerds.com/) is a great blog on improving your social skills in a work environment. Real life advice and scientific backups make it a real gem.
 
+# Magazines
+
+* [Linux Voice](https://www.linuxvoice.com/) - a UK-based magazine on everything Linux: security, applications, open source, reviews and even coding tutorials. The best thing about *Linux Voice* is that it becomes freely incensed after nine months, i.e., it can be viewed and downloaded for free after the 9 months since the issue.
+
 # Entertainment
 
 * [Amanita Design](http://amanita-design.net/index.html) puzzle games. Beautiful, well-thought and very engaging. Yes, it engages your brain very well. I'm a big fan and always try to stay up to date with their news in order to get the new game as soon as it is released. If you ask, my favorite game is [Machinarium](http://machinarium.net/). 
