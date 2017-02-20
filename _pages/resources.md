@@ -25,6 +25,14 @@ In this list I try to include some of my favorite resources. This list is occasi
 
 * [Linux Voice](https://www.linuxvoice.com/) - a UK-based magazine on everything Linux: security, applications, open source, reviews and even coding tutorials. The best thing about *Linux Voice* is that it becomes freely incensed after nine months, i.e., it can be viewed and downloaded for free after the 9 months since the issue.
 
+# Open source projects
+
+List of project from which I learned a lot about software architecture and best coding practices:
+
+* [Charm](https://github.com/KDAB/Charm) is an excellent source of Qt-based application. Very valuable CMake files and general usage of Qt classes.
+* [OpenMVG](https://github.com/openMVG/openMVG) - an open source library created by one of my previous collegues. From there I learned a lot about continious integration tools that can be used together with github.
+* [QOwnNotes](https://github.com/pbek/QOwnNotes) is a multi-platform project with a neat structure and wide range of CI tools incorporated.
+
 # Entertainment
 
 * [Amanita Design](http://amanita-design.net/index.html) puzzle games. Beautiful, well-thought and very engaging. Yes, it engages your brain very well. I'm a big fan and always try to stay up to date with their news in order to get the new game as soon as it is released. If you ask, my favorite game is [Machinarium](http://machinarium.net/). 
