@@ -30,7 +30,7 @@ In this list I try to include some of my favorite resources. This list is occasi
 List of project from which I learned a lot about software architecture and best coding practices:
 
 * [Charm](https://github.com/KDAB/Charm) is an excellent source of Qt-based application. Very valuable CMake files and general usage of Qt classes.
-* [OpenMVG](https://github.com/openMVG/openMVG) - an open source library created by one of my previous collegues. From there I learned a lot about continious integration tools that can be used together with github.
+* [OpenMVG](https://github.com/openMVG/openMVG) - an open source library created by one of my previous colleagues. From there I learned a lot about continuous integration tools that can be used together with github.
 * [QOwnNotes](https://github.com/pbek/QOwnNotes) is a multi-platform project with a neat structure and wide range of CI tools incorporated.
 
 # Entertainment
