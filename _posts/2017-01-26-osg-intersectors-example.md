@@ -12,9 +12,6 @@ tags:
 
 # Goal
 
-![Intersectors figure]({{ site.url }}{{ site.baseurl }}/assets/images/osg-intersectors/intersectors.gif)
-{: .align-center}
-
 When I was building CAD-like program, one of the essential needs was different types of intersectors. The purpose was to be able to select different elements such as points, lines and drag them in a special manner, e.g., so that dragged rectangle point remains in the same plane as the rectangle. 
 
 The [tiny demo program](https://github.com/vicrucann/osg-intersectors-example) I created demonstrates how to use exactly the aforementioned intersectors. In short, I provide three types of intersectors:
@@ -24,6 +21,9 @@ The [tiny demo program](https://github.com/vicrucann/osg-intersectors-example) I
 3. Virtual plane intersector - i.e., the ray cast always intersects with a virtual plane to define a virtual intersection point.
 
 This post's main goal is to describe the created demo. All the parts of the demo are based on previous tutorials which will provide in depth details, if necessary.
+
+![Intersectors figure]({{ site.url }}{{ site.baseurl }}/assets/images/osg-intersectors/intersectors.gif)
+{: .align-center}
 
 # Intersectors
 
