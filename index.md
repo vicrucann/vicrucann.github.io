@@ -5,7 +5,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/vr-home-page-feature.JPG
   caption:
-excerpt: 'Professional blog and tutorials on using different tools for vision and graphics applications.'
+excerpt: 'Professional blog and tutorials on using different tools for vision, graphics and UI applications.'
 feature_row:
   - image_path: /assets/images/teaser-tutorials.png
     title: "Coding Tutorials"

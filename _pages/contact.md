@@ -5,7 +5,7 @@ title: "Contact"
 excerpt: "Preferred methods of contacting me."
 ---
 
-Have a question? Noticed an error? Improvement suggestion?  
+Have a question? Noticed an error or broken link? Improvement suggestion?  
 
 The best way to contact me is [to send an email](mailto:vicrucann@gmail.com). Or, you can leave a comment under the corresponding tutorial. I appreciate your feedback.
 
