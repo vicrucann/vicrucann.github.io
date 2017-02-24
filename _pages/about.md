@@ -16,7 +16,7 @@ title: "About"
 
 ## This site
 
-In the beginning the main reason I created this site was to document tips and tricks that I learned through my daily work. Very soon, however, I discovered that framing my posts in a form of a tutorial is much more suitable. I often edit some of my old tutorials by adding clarification details or by providing better code samples. I post about [other non-technical topics of interest](https://vicrucann.github.io/posts/) as well, but much less frequently.
+In the beginning the main reason I created this site was to document tips and tricks that I learned through my daily work. Very soon, however, I discovered that framing my posts in a form of a tutorial is much more suitable. I post about [other non-technical topics of interest](https://vicrucann.github.io/posts/) as well, but much less frequently.
 
 **Note:** this site theme was shamelessly forked from an awesome Jekyll theme [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/) by [Michael Rose](https://mademistakes.com/). I, personally, do not do any web development. 
 {: .notice--info}
