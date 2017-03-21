@@ -8,15 +8,15 @@ title: "About"
 
 ## Misc facts
 
-* My **first programming language** was *assembly*, and my first programming Bible was a Russian book [Assembly For Dos, Windows and Linux](http://a.co/hNwBceL) by [Sergey Zubkov](http://cubbi.com/). My first high level language was *Object Pascal* within the *Borland Delphi* environment.
+* My **first programming language** was *assembly*, and my first programming Bible was a Russian book [Assembly For Dos, Windows and Linux](http://a.co/hNwBceL). My first high level language was *Object Pascal* within the *Borland Delphi* environment. Nowadays I prefer C++.
 * I'm very **passionate** about programming and software development since it allows me to use my brain in order to solve puzzles, and gives me a power to create something from a scratch with my own-defined logic. 
 * I love learning **new languages** - both machine and human. Although, I believe the machine languages are easier to tame.
-* After completing the Erasmus Mundus Master programme in [Color in Informatics and Media Technology](https://master-colorscience.eu/), I obtained a **PhD in computer science** from [*École des Ponts ParisTech*](http://en.enpc.fr/en), one of the [oldest and most prestigious](https://en.wikipedia.org/wiki/%C3%89cole_des_ponts_ParisTech) French Grandes Écoles. My research was conducted at [IMAGINE](http://imagine.enpc.fr/) laboratory with an emphasis on [camera calibration and image enhancement](http://imagine.enpc.fr/~rudakovv/manuscript_main_rudakovv.pdf).
-* In my **spare time** I like to do rock climbing, [write coding tutorials](https://vicrucann.github.io/tutorials/), learn human languages and [read tech articles and books](https://vicrucann.github.io/resources/). I'm also big fan of non-technical books and Japanese animation.
+* After completing the Erasmus Mundus Master programme in [Color in Informatics and Media Technology](https://master-colorscience.eu/), I obtained a **PhD in computer science** from [*École des Ponts ParisTech*](http://en.enpc.fr/en). My research was conducted at [IMAGINE](http://imagine.enpc.fr/) laboratory with an emphasis on [camera calibration and image enhancement](http://imagine.enpc.fr/~rudakovv/manuscript_main_rudakovv.pdf).
+* In my **spare time** I like to do rock climbing, [write coding tutorials](https://vicrucann.github.io/tutorials/), learn human languages and [read tech articles and books](https://vicrucann.github.io/resources/). I'm also big fan of non-technical books and Japanese mahjong. On rare occasions I like to play puzzle video games.
 
 ## This site
 
 In the beginning the main reason I created this site was to document tips and tricks that I learned through my daily work. Very soon, however, I discovered that framing my posts in a form of a tutorial is much more suitable. I post about [other non-technical topics of interest](https://vicrucann.github.io/posts/) as well, but much less frequently.
 
-**Note:** this site theme was shamelessly forked from an awesome Jekyll theme [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/) by [Michael Rose](https://mademistakes.com/). I, personally, do not do any web development. 
+**Note:** this site theme was shamelessly forked from an awesome Jekyll theme [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes/) by [Michael Rose](https://mademistakes.com/). I do not do any web development. 
 {: .notice--info}
