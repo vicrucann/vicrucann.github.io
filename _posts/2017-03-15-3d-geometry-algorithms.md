@@ -53,7 +53,7 @@ Now if we want to project[^ref_point_line] a custom point \\( P_i \\) onto line 
 
 \\[ R = P_i + \frac{ (P_i-P_0) \cdot \vec{u}}{\vec{u}\cdot \vec{u}} \vec{u} \\]
 
-[^ref_point_line]: (How can I project a 3D point onto a 3D line?)[http://gamedev.stackexchange.com/a/72529/74350].
+[^ref_point_line]: [How can I project a 3D point onto a 3D line?](http://gamedev.stackexchange.com/a/72529/74350).
 
 Using OpenSceneGraph, we can write the above formula as an algorithm:
 
@@ -90,7 +90,7 @@ Two planes intersect in a line which has direction vector \\(\vec{u}=\vec{n_1}\t
 
 After the direction vector \\(\vec{u}\\) is found, we still have to find a specific point \\(P_0=(x_0, y_0, z_0)\\) on it and which belongs to the both planes. We can do it by finding a solution to the plane equations, but there would be only two equations and the three unknown since the point \\(P_0\\) can lie anywhere on the line \\(l\\). For this case we need another constrain to solve for a specific \\(P_0\\). We will use *Direct Linear Equation*[^ref_planes].
 
-[^ref_planes]: (Intersection of Lines and Planes)[http://geomalgorithms.com/a05-_intersect-1.html] by Dan Sunday.
+[^ref_planes]: [Intersection of Lines and Planes](http://geomalgorithms.com/a05-_intersect-1.html) by Dan Sunday.
 
 The main idea is to find a non-zero coordinate of \\(\vec{u}\\) and set the corresponding coordinate of \\(P_0\\) to 0. Further, we choose the coordinate with the largest absolute value, as this will produce the most robust computations. As an example, suppose \\(u_z\neq0\\), then we set \\(P_0=(x_0,y_0,0\\) and it lies on \\(l\\). Now we have two equations: 
 
