@@ -6,6 +6,7 @@ excerpt: Five algorithms that describe relationships between planes, lines and p
 tags: 
     - 3D geometry
     - OpenSceneGraph
+mathjax: true
 ---
 
 {% include toc %}
