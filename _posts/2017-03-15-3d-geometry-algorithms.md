@@ -49,7 +49,7 @@ We define a line to be given by a parametric (point-and-vector) form:
 ![Project point on a line]({{ site.url }}{{ site.baseurl }}/assets/images/3d-geometry/project-point-line.png)
 {: .align-center}
 
-Now if we want to project[^ref_point_line] a custom point \\( P_i \\) onto line \\(l\\), we can do it by projecting a vector \\(\vec{P_0P_1}\\) onto the line \\(l\\). Then if we add the resulting vector to the point \\(P_i\\), we will obtain the projection result. The final formula is:
+Now if we want to project a custom point \\( P_i \\) onto line \\(l\\), we can do it by projecting a vector \\(\vec{P_0P_1}\\) onto the line \\(l\\). Then if we add the resulting vector to the point \\(P_i\\), we will obtain the projection result. The final formula is[^ref_point_line]:
 
 \\[ R = P_i + \frac{ (P_i-P_0) \cdot \vec{u}}{\vec{u}\cdot \vec{u}} \vec{u} \\]
 
@@ -190,9 +190,9 @@ Where \\(\vec{n}\\) is a normal vector to the plane, and \\(C\\) is an arbitrary
 
 The line segment, or a ray, or a line is represented by two points in 3D - \\(N\\) and \\(F\\) (like if we are talking about *near* and *far* points). Our task is to find an intersection between the line segment \\(NF\\) and the plane. 
 
-Generally speaking, if we deal with a line (not line segment which is restricted by two points, or a ray which is restricted by one point), it will be either parallel to any plane in 3D, or intersect it at some point. We can check whether the line and plane are parallel by testing if \\(\vec{n}\cdot\vec{FN}=0\\), which means that the line direction vector \\(\vec{FN}\\) is perpendicular to the plane normal \\(\vec{n}\\)[^ref_planes]. If this is true, there can be no intersection found since the line is parallel to the plane. 
+Generally speaking, if we deal with a line (not line segment which is restricted by two points, or a ray which is restricted by one point), it will be either parallel to any plane in 3D, or intersect it at some point. We can check whether the line and plane are parallel by testing if \\(\vec{n}\cdot\vec{FN}=0\\), which means that the line direction vector \\(\vec{FN}\\) is perpendicular to the plane normal \\(\vec{n}\\). If this is true, there can be no intersection found since the line is parallel to the plane. 
 
-If the line and the plane are not parallel, they have an intersection point \\(P\\) which can be found as: 
+If the line and the plane are not parallel, they have an intersection point \\(P\\) which can be found as[^ref_planes]: 
 
 \\[x = \frac{(C-N)\cdot\vec{n}}{\vec{FN}\cdot\vec{n}} \\]
 \\[P = \vec{FN}x + N\\]
@@ -262,7 +262,7 @@ Assuming we are given a line/ray (e.g., result of the [ray casting algorithm](ht
 
 Now we want to perform a projection of the line \\(l_2\\) onto \\(l_1\\), i.e., we want to calculate 3D coordinates of the point \\(X_1\\) (or inversely of \\(X_2\\), if needed). 
 
-Let \\(\vec{d} = P_1 - P_2\\) is the direction vector from \\(R_1\\) to \\(X_1\\). Let \\(\vec{u_1}\\) and \\(\vec{u_2}\\) be unit direction vectors for the given line segments. Then we can obtain an orthogonal to both \\(l_1\\) and \\(l_2\\): it can be found by *cross product* between \\(\vec{u_1}\\) and \\(\vec{u_2}\\), i.e., \\(\vec{u_3} = \vec{u_1}\times \vec{u_2}\\). Now if we project[^ref_skew] \\(\vec{d}\\) onto \\(\vec{u_3}\\) we will obtain a scalar result which is the shortest distance between the two skew lines:
+Let \\(\vec{d} = P_1 - P_2\\) is the direction vector from \\(R_1\\) to \\(X_1\\). Let \\(\vec{u_1}\\) and \\(\vec{u_2}\\) be unit direction vectors for the given line segments. Then we can obtain an orthogonal to both \\(l_1\\) and \\(l_2\\): it can be found by *cross product* between \\(\vec{u_1}\\) and \\(\vec{u_2}\\), i.e., \\(\vec{u_3} = \vec{u_1}\times \vec{u_2}\\). Now if we project \\(\vec{d}\\) onto \\(\vec{u_3}\\) we will obtain a scalar result which is the shortest distance between the two skew lines[^ref_skew]:
 
 \\[d = \frac{\vec{d}\cdot(\vec{u_1}\times\vec{u_2})}{\|\vec{u_1} \times \vec{u2} \|}\\]
 
@@ -271,7 +271,7 @@ Let \\(\vec{d} = P_1 - P_2\\) is the direction vector from \\(R_1\\) to \\(X_1\\
 **Note:** since the skew lines are not parallel, \\(\vec{u_1}\times\vec{u_2}\neq 0\\). 
 {: .notice--warning}
 
-We want to calculate the position of \\(X_1\\) and \\(X_2\\) - the closest points on the lines. Let \\(\vec{k}=\vec{X_1X_2}\\), and let  \\(r_i\\) be the unique numbers such that \\(X_i = P_i + r_i\vec{u_i}\\). Given \\(\vec{k}\\) is orthogonal to both lines, taking the dot product of \\(\vec{u_1}\cdot\vec{u_2}\\) yields the system of linear equations[ref_skew] (derivation omitted): 
+We want to calculate the position of \\(X_1\\) and \\(X_2\\) - the closest points on the lines. Let \\(\vec{k}=\vec{X_1X_2}\\), and let  \\(r_i\\) be the unique numbers such that \\(X_i = P_i + r_i\vec{u_i}\\). Given \\(\vec{k}\\) is orthogonal to both lines, taking the dot product of \\(\vec{u_1}\cdot\vec{u_2}\\) yields the system of linear equations[^ref_skew] (derivation omitted): 
 
 \\[\vec{u_1}\cdot\vec{u_1}r_1 - \vec{u_1}\cdot\vec{u2}r_2 - \vec{u_1}\cdot\vec{d} = 0\\]
 \\[\vec{u_1}\cdot\vec{u_2}r_1 - \vec{u_2}\cdot\vec{u2}r_2 - \vec{u_2}\cdot\vec{d} = 0\\]
@@ -371,8 +371,8 @@ The steps of the algorithm are as follows:
 3. If the distance is zero, the lines **intersect precisely**; find the intersection using dot and cross products. 
 4. If the intersection is not precise, extract the intersection point as **average between two projections** of both of the skew lines. 
 
-As mentioned above, the formula for the **precise intersection** can be found using dot and cross product of vectors[ref_lines]. Let \\(\alpha\\) and \\(\beta\\) be two 3D lines which are given by points \\(C\\) and \\(D\\) and direction vectors \\(\vec{e}\\) and \\(\vec{f}\\) correspondingly. 
-[ref_lines]: (Find intersection of two 3D lines)[http://math.stackexchange.com/a/271366/287339].
+As mentioned above, the formula for the **precise intersection** can be found using dot and cross product of vectors[^ref_lines]. Let \\(\alpha\\) and \\(\beta\\) be two 3D lines which are given by points \\(C\\) and \\(D\\) and direction vectors \\(\vec{e}\\) and \\(\vec{f}\\) correspondingly. 
+[^ref_lines]: (Find intersection of two 3D lines)[http://math.stackexchange.com/a/271366/287339].
 
 ![Two planes intersection]({{ site.url }}{{ site.baseurl }}/assets/images/3d-geometry/line-intersect.png)
 {: .align-center}
