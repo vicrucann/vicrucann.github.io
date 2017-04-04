@@ -373,7 +373,7 @@ The steps of the algorithm are as follows:
 
 As mentioned above, the formula for the **precise intersection** can be found using dot and cross product of vectors[^ref_lines]. Let \\(\alpha\\) and \\(\beta\\) be two 3D lines which are given by points \\(C\\) and \\(D\\) and direction vectors \\(\vec{e}\\) and \\(\vec{f}\\) correspondingly. 
 
-[^ref_lines]: (Find intersection of two 3D lines)[http://math.stackexchange.com/a/271366/287339].
+[^ref_lines]: [Find intersection of two 3D lines](http://math.stackexchange.com/a/271366/287339).
 
 ![Two planes intersection]({{ site.url }}{{ site.baseurl }}/assets/images/3d-geometry/line-intersect.png)
 {: .align-center}
