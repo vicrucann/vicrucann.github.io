@@ -5,5 +5,5 @@ title: "Resume"
 ---
 
 <figure>
-    <a href="/assets/pdfs/VRudakova-resume.pdf"><img src="/assets/pdfs/VRudakova-resume.pdf"></a>
+    <a href="/assets/pdfs/VRudakova-resume.pdf"><img src="/assets/images/PDF.png"></a>
 </figure>
