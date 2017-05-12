@@ -10,7 +10,8 @@ In this list I try to include some of my favorite resources. This list is occasi
 
 * [Code Complete 2: A Practical Handbook of Software Construction, Second Edition](http://a.co/4WwA5IA) by Steve McConnell is unbeatable classics on software development.
 * [A Tour of C++](http://a.co/alqLoeX) by Bjarne Stroustrup is a perfect balance between brevity, depth and the language essential elements.
-* [Soft Skills: The software developer's life manual](http://a.co/hGdAB08) by John Sonmez - great resource on many aspects of software developers lifestyle and life management. From self-marketing to health and retirement - it covers varying topics. 
+* [Soft Skills: The software developer's life manual](http://a.co/hGdAB08) by John Sonmez - great resource on many aspects of software developers lifestyle and life management. From self-marketing to health and retirement - it covers varying topics.
+* [Design Patterns](http://a.co/dexKqsi) by Erich Gamma et al. - covers the design of object-oriented software and examines how to investigate requirements, create solutions and then translate designs into code.
 
 # Blogs
 
@@ -35,6 +36,4 @@ List of project from which I learned a lot about software architecture and best 
 
 # Entertainment
 
-* [Amanita Design](http://amanita-design.net/index.html) puzzle games. Beautiful, well-thought and very engaging. Yes, it engages your brain very well. I'm a big fan and always try to stay up to date with their news in order to get the new game as soon as it is released. If you ask, my favorite game is [Machinarium](http://machinarium.net/). 
-
-* [Psycho Pass anime](https://en.wikipedia.org/wiki/Psycho-Pass) - if you like AI, robots and interested to see how the potential future might look like in 100 years, this fiction anime is worth discovering.
+* [Amanita Design](http://amanita-design.net/index.html) puzzle games. Beautiful, well-thought and very engaging. Yes, it engages your brain very well. I'm a big fan and always try to stay up to date with their news in order to get the new game as soon as it is released. If you ask, my favorite game is [Machinarium](http://machinarium.net/).
