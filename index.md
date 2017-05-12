@@ -7,7 +7,7 @@ header:
   caption:
 excerpt: 'Professional blog and tutorials on using different tools for vision, graphics and UI applications.'
 feature_row:
-  - image_path: /assets/images/teaser-tutorials.jpg
+  - image_path: /assets/images/teaser-tutorials.png
     title: "Coding tutorials"
     excerpt: "Tool installation, libraries usage hacks, computer graphics and more."
     url: "/tutorials/"
