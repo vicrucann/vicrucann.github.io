@@ -24,4 +24,4 @@ date: 2015-08-01
 
 {% include gallery caption="A screenshot of the result masked reconstruction viewable from Chimera software." %}
 
-[View on github](https://github.com/vicrucann/cryo3d){: .btn}
+[View on github](https://github.com/vicrucann/cryo3d){: .btn}{: .align-center}
