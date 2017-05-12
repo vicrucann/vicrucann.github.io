@@ -7,16 +7,10 @@ header:
   caption:
 excerpt: 'Professional blog and tutorials on using different tools for vision, graphics and UI applications.'
 feature_row:
-  - image_path: /assets/images/teaser-tutorials.png
-    title: "Coding Tutorials"
+  - image_path: /assets/images/teaser-tutorials.jpg
+    title: "Coding tutorials"
     excerpt: "Tool installation, libraries usage hacks, computer graphics and more."
     url: "/tutorials/"
-    btn_label: "View List"
-feature_row2:
-  - image_path: /assets/images/teaser-posts.jpg
-    title: "Blog Posts"
-    excerpt: "Time management, lifestyle and travel."
-    url: "/posts/"
     btn_label: "View List"
   - image_path: /assets/images/teaser-projects.png
     title: "Projects"
@@ -34,6 +28,4 @@ intro:
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row type="left" %}
-
-{% include feature_row id="feature_row2" %}
+{% include feature_row id="feature_row" %}
