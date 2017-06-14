@@ -174,6 +174,9 @@ QtOSGWidget* widget = new QtOSGWidget(scaleX, scaleY, &window);
 // etc.
 {% endhighlight %}
 
+**Update:** there is a much easier way to calculate the scaling parameter. So, for all the OpenGL-related parameters such as widgets and events, it is sufficient to use `QApplication::desktop()->devicePixelRatio()` as a scaling value. 
+{: .notice--warning}
+
 ## Scale usage within `QOpenGLWidget`
 
 Assuming you had passed the `scaleX` and `scaleY` to the `QOpenGLWidget`, you can use them when passing the Qt dimensions such width and height, and mouse positions for events to the OSG / OpenGL content. Following the same example of `resizeGL()`, this is how the method will turn out:
@@ -190,6 +193,9 @@ Assuming you had passed the `scaleX` and `scaleY` to the `QOpenGLWidget`, you ca
 
 After we make sure we multiply every Qt dimension that we pass with the obtained scale, our application's content finally runs correctly.
 
+**Update:** since we now calcualte the `scale` using `QApplication::desktop()->devicePixelRatio()`, we will have only one `scale` value which will be applied the same manner for the resizing example above. 
+{: .notice--warning}
+
 ## Summary
 
 **Pros**: total control of OSG / OpenGL content scaling which can be the only option when target OS provides automatic scaling (think retina display on MacOS).
@@ -201,5 +207,5 @@ After we make sure we multiply every Qt dimension that we pass with the obtained
 
 # Codes
 
-You can check the [minimal Qt + OSG code](https://github.com/vicrucann/QtOSG-hello). Try to switch `QApplication::setAttribute(Qt::AA_DisableHighDpiScaling);` and see how the manual scaling works (tested on Windows only).
+You can check the [minimal Qt + OSG code](https://github.com/vicrucann/QtOSG-hello). Try to switch `QApplication::setAttribute(Qt::AA_DisableHighDpiScaling);` and see how the manual scaling works (I had only tested on Windows, but it based on the recieved user feedback, that seems to work on Mac machines with Retina display as well).
 
