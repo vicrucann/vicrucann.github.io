@@ -15,5 +15,4 @@ If these sorts of things interest you, follow along on:
 
 * [Twitter](https://twitter.com/vicrucann)
 * [Github](https://github.com/vicrucann)
-* [Google+](https://plus.google.com/+VictoriaRudakova)
 * [LinkedIn](https://linkedin.com/in/vicrucann)
