@@ -5,12 +5,13 @@ categories:
 excerpt: Formula deduction when dealing with average of wrapping-range values such as angles.
 tags: 
     - 3D geometry
+    - C++11
 mathjax: true
 ---
 
 # Problem overview
 
-Let's assume we are dealing with a set of values which range wraps around, for example, angles where each angle \\( \phi_i \in [0^\circ, 360^\circ) \\). The problem occurs when we want to take an average value of such set. To clarify, for given two angles \\( \phi_1=1^\circ \\) and ((\ \phi_2=359^\circ ))\, the angular average is \\( 0^\circ \\) while the mathematical average is \\( \phi_{avg} = \frac{\phi_1+\phi_2}{2} = \frac{1^\circ+359^\circ}{2}=180^\circ \\).
+Let's assume we are dealing with a set of values which range wraps around, for example, angles where each angle \\( \phi_i \in [0^\circ, 360^\circ) \\). The problem occurs when we want to take an average value of such set. To clarify, for given two angles \\( \phi_1=1^\circ \\) and \\( \phi_2=359^\circ \\), the angular average is \\( 0^\circ \\) while the mathematical average is \\( \phi_{avg} = \frac{\phi_1+\phi_2}{2} = \frac{1^\circ+359^\circ}{2}=180^\circ \\).
 
 In practice, I encoutered this problem while solving a calibration problem of a Time-of-Flight devicei when it was necessary to extract an average phase value from the measured phases of each sensor pixel. When the ToF device was placed at the limit range, the average seemed to be entirely wrong (mathematical average), so we had to come up with a proper formula for the angular average instead. 
 
@@ -20,7 +21,7 @@ In this tuturial the formula will be derived, and a C++11-based code snippet wil
 
 The solution principle lies in representation of each angle as a vector as it was a radius on a unit circle with the location defined by its angle. See sub-figure `a` below. 
 
-![Vector representation and vector summation]({{ site.url }}{{ site.baseurl }}/assets/images/phase-average/phase-average.png)
+![Vector representation and vector summation]({{ site.url }}{{ site.baseurl }}/assets/images/phase-average/phase-average.jpg)
 {: .align-center}
 
 The vector which is defined by the angle \\( \phi_1 \\) has projections on \\(x\\) and \\(y\\) axises. Since the vector forms a right triangle with the \\(x\\) axis, we can derive the projection values as:
